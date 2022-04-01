@@ -6,16 +6,16 @@ import { useEffect } from 'react';
 import { getPosts } from './actions/posts.js';
 
 function App() {
-  const memories = "https://i.ytimg.com/vi/UsESdZ9qpR0/maxresdefault.jpg";
+  const memories = "Records your feelings by writting comments!";
   const dispatch = useDispatch();
-
+  
   useEffect(()=>{
     dispatch(getPosts());
   }, [dispatch]);
   
   return (
     <div>
-      <img src={memories} />
+      <h1>{memories}</h1>
       <Posts/>
       <Form/>
     </div>

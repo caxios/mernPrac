@@ -1,8 +1,11 @@
 import React from 'react';
-
+import moment from 'moment';
 const Post = ({post})=>{
     return(
-        <h1>{post}</h1>
+        <div>
+            <h1>{post}</h1>
+            <h6>{moment(post.createdAt).fromNow()}</h6>
+        </div>
     );
 }
 
