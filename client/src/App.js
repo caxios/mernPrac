@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import Posts from './components/Posts/Posts.js';
 import Form from './components/Form/Form.js';
 import { useEffect } from 'react';
-import {getPost} from './actions/posts.js';
+import { getPosts } from './actions/posts.js';
 
 function App() {
   const memories = "https://i.ytimg.com/vi/UsESdZ9qpR0/maxresdefault.jpg";
