@@ -7,10 +7,7 @@ const Posts = ()=>{
     console.log(posts);
     return(
         <div>
-            <h1>Posts</h1>
-            <Post/>
-            <Post/>
-            <Post/>
+            {posts.map(post=><div key={post.id}><Post post={post['message']} /></div>)}
         </div>
     );
 }
